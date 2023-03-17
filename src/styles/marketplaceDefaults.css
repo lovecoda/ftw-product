@@ -16,30 +16,30 @@
 :root {
   /* ================ Colors ================ */
 
-  --marketplaceColor: rebeccapurple; /* hsl(260, 63%, 46%) */
-  --marketplaceColorLight: #7748d5; /* hsl(260, 63%, 56%), +10L from marketplaceColor */
-  --marketplaceColorDark: #34196c; /* hsl(260, 63%, 26%), -20L from marketplaceColor */
+  --marketplaceColor: #325152; /* hsl(182, 24%, 26%) */
+  --marketplaceColorLight: #467072; /* hsl(260, 63%, 56%), +10L from marketplaceColor */
+  --marketplaceColorDark: #1f3232; /* hsl(260, 63%, 16%), -20L from marketplaceColor */
 
   /* Used with inline CSS SVGs */
   --marketplaceColorEncoded: %23a02cbf;
 
-  --successColor: #2ecc71;
-  --successColorDark: #239954;
-  --successColorLight: #f0fff6;
-  --failColor: #ff0000;
-  --failColorLight: #fff0f0;
-  --attentionColor: #ffaa00;
-  --attentionColorLight: #fff7f0;
+  --successColor: #84CDBC;
+  --successColorDark: #45686E;
+  --successColorLight: #84CDBC;
+  --failColor: #E54C32;
+  --failColorLight: #F6C6BE;
+  --attentionColor: #ECBC66;
+  --attentionColorLight: #F4D8A5;
   --bannedColorLight: var(--marketplaceColorLight);
   --bannedColorDark: var(--marketplaceColor);
 
-  --matterColorDark: #000000;
-  --matterColorAlmostDark: #1d1d1f;
-  --matterColor: #4a4a4a;
-  --matterColorAnti: #b2b2b2;
-  --matterColorNegative: #e7e7e7;
-  --matterColorBright: #fcfcfc;
-  --matterColorLight: #ffffff;
+  --matterColorDark: #343434;
+  --matterColorAlmostDark: #4a4a4a;
+  --matterColor: #b2b2b2;
+  --matterColorAnti: #D6D6D6; /*autofills, accents in filter section*/
+  --matterColorNegative: #e7e7e7; 
+  --matterColorBright: #fcfcfc; /*controls the landing page background*/
+  --matterColorLight: #FFFFFF;
 
   --matterColorLightTransparent: rgba(255, 255, 255, 0.65);
 
