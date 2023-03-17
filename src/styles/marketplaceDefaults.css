@@ -35,8 +35,8 @@
 
   --matterColorDark: #343434;
   --matterColorAlmostDark: #4a4a4a;
-  --matterColor: #b2b2b2;
-  --matterColorAnti: #D6D6D6; /*autofills, accents in filter section*/
+  --matterColor: #325152;
+  --matterColorAnti: hsl(0, 0%, 64%); /*autofills, accents in filter section*/
   --matterColorNegative: #e7e7e7; 
   --matterColorBright: #fcfcfc; /*controls the landing page background*/
   --matterColorLight: #FFFFFF;
