@@ -126,6 +126,7 @@
 }
 
 .organizationInfo {
+  color: var(--matterColorAnti)
 }
 
 .organizationDescription,
@@ -138,7 +139,7 @@
 }
 
 .copyrightLink {
-  color: var(--matterColor);
+  color: var(--matterColorAnti);
   transition: var(--transitionStyleButton);
 
   &:hover {
