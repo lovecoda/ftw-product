@@ -35,7 +35,7 @@
 
   --matterColorDark: #343434;
   --matterColorAlmostDark: #4a4a4a;
-  --matterColor: #325152;
+  --matterColor: #343434; /*changes main body font color*/
   --matterColorAnti: hsl(0, 0%, 64%); /*autofills, accents in filter section*/
   --matterColorNegative: #e7e7e7; 
   --matterColorBright: #fcfcfc; /*controls the landing page background*/

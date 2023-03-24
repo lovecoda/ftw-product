@@ -45,6 +45,9 @@ const TopbarMobileMenu = props => {
         <FormattedMessage id="TopbarMobileMenu.signupOrLogin" values={{ signup, login }} />
       </span>
     );
+
+    /*logged out menu that shows*/
+
     return (
       <div className={css.root}>
         <div className={css.content}>
@@ -57,7 +60,7 @@ const TopbarMobileMenu = props => {
         </div>
         <div className={css.footer}>
           <NamedLink className={css.createNewListingLink} name="SearchPage">
-            <FormattedMessage id="TopbarMobileMenu.newListingLink" />
+            <FormattedMessage id="TopbarMobileMenu.browseAll" />
           </NamedLink>
         </div>
       </div>
@@ -76,7 +79,9 @@ const TopbarMobileMenu = props => {
     return currentPage === page || isAccountSettingsPage ? css.currentPage : null;
   };
 
-  return (
+ /*logged in menu that shows*/
+  
+ return (
     <div className={css.root}>
       <AvatarLarge className={css.avatar} user={currentUser} />
       <div className={css.content}>
@@ -112,11 +117,17 @@ const TopbarMobileMenu = props => {
         >
           <FormattedMessage id="TopbarMobileMenu.accountSettingsLink" />
         </NamedLink>
+        <NamedLink
+          className={classNames(css.navigationLink, currentPageClass('CMSPage'))}
+          name="CMSPage" params={{ pageId: 'resources' }}
+        >
+          <FormattedMessage id="TopbarMobileMenu.resourcesLink" />
+        </NamedLink>
         <div className={css.spacer} />
       </div>
       <div className={css.footer}>
         <NamedLink className={css.createNewListingLink} name="SearchPage">
-          <FormattedMessage id="TopbarMobileMenu.newListingLink" />
+          <FormattedMessage id="TopbarMobileMenu.browseAll" />
         </NamedLink>
         
       </div>
