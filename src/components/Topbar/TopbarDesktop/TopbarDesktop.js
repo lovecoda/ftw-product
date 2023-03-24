@@ -135,7 +135,7 @@ const TopbarDesktop = props => {
       </span>
     </NamedLink>
   );
-
+/* Determines order of the top bar components */
   return (
     <nav className={classes}>
       <NamedLink className={css.logoLink} name="LandingPage">
@@ -146,11 +146,12 @@ const TopbarDesktop = props => {
         />
       </NamedLink>
       {search}
-      <NamedLink className={css.createListingLink} name="NewListingPage">
+      <NamedLink className={css.createListingLink} name="SearchPage">
         <span className={css.createListing}>
           <FormattedMessage id="TopbarDesktop.createListing" />
         </span>
       </NamedLink>
+      
       {inboxLink}
       {profileMenu}
       {signupLink}
