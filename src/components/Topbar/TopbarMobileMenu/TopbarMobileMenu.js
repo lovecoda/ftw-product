@@ -11,7 +11,7 @@ import { FormattedMessage } from '../../../util/reactIntl';
 import { propTypes } from '../../../util/types';
 import { ensureCurrentUser } from '../../../util/data';
 
-import { AvatarLarge, InlineTextButton, NamedLink, NotificationBadge } from '../../../components';
+import { AvatarLarge, ExternalLink, InlineTextButton, NamedLink, NotificationBadge } from '../../../components';
 
 import css from './TopbarMobileMenu.module.css';
 
@@ -117,12 +117,12 @@ const TopbarMobileMenu = props => {
         >
           <FormattedMessage id="TopbarMobileMenu.accountSettingsLink" />
         </NamedLink>
-        <NamedLink
-          className={classNames(css.navigationLink, currentPageClass('CMSPage'))}
-          name="CMSPage" params={{ pageId: 'resources' }}
+        <ExternalLink
+          className={classNames(css.navigationLink)}
+          href="https://lovecoda.medium.com/"
         >
           <FormattedMessage id="TopbarMobileMenu.resourcesLink" />
-        </NamedLink>
+        </ExternalLink>
         <div className={css.spacer} />
       </div>
       <div className={css.footer}>

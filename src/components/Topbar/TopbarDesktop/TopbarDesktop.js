@@ -14,6 +14,7 @@ import {
   MenuContent,
   MenuItem,
   NamedLink,
+  ExternalLink,
 } from '../../../components';
 
 import TopbarSearchForm from '../TopbarSearchForm/TopbarSearchForm';
@@ -151,12 +152,12 @@ const TopbarDesktop = props => {
           <FormattedMessage id="TopbarDesktop.browseAll" />
         </span>
       </NamedLink>
-      <NamedLink className={css.createListingLink} name="CMSPage" params={{ pageId: 'resources' }} >
+      <ExternalLink className={css.createListingLink} href="https://lovecoda.medium.com/">
         <span className={css.createListing}>
           <FormattedMessage id="TopbarDesktop.resourcesLink" />
         </span>
-      </NamedLink>
-     
+      </ExternalLink>
+    
       {inboxLink}
       {profileMenu}
       {signupLink}

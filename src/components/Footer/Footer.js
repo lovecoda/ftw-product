@@ -82,11 +82,6 @@ const Footer = props => {
             <div className={css.infoLinks}>
               <ul className={css.list}>
                 <li className={css.listItem}>
-                  <NamedLink name="NewListingPage" className={css.link}>
-                    <FormattedMessage id="Footer.toNewListingPage" />
-                  </NamedLink>
-                </li>
-                <li className={css.listItem}>
                   <NamedLink name="CMSPage" params={{ pageId: 'about' }} className={css.link}>
                     <FormattedMessage id="Footer.toAboutPage" />
                   </NamedLink>
@@ -97,9 +92,10 @@ const Footer = props => {
                   </NamedLink>
                 </li>
                 
+                
                 <li className={css.listItem}>
-                <NamedLink name="CMSPage" params={{ pageId: 'contact' }} className={css.link}>
-                    <FormattedMessage id="Footer.toContactPage" />
+                  <NamedLink name="NewListingPage" className={css.link}>
+                    <FormattedMessage id="Footer.toNewListingPage" />
                   </NamedLink>
                 </li>
               </ul>
@@ -107,49 +103,27 @@ const Footer = props => {
             <div className={css.searches}>
               <ul className={css.list}>
                 <li className={css.listItem}>
-                  <NamedLink
-                    name="SearchPage"
-                    to={{
-                      search: '?pub_brand=adidas',
-                    }}
+                  <ExternalLink
+                    href="https://lovecoda.medium.com/"
                     className={css.link}
                   >
-                    <FormattedMessage id="Footer.link1" />
-                  </NamedLink>
+                    <FormattedMessage id="Footer.resourcesLink" />
+                  </ExternalLink>
                 </li>
                 <li className={css.listItem}>
                   <NamedLink
                     name="SearchPage"
-                    to={{
-                      search: '?pub_brand=air_jordan',
-                    }}
                     className={css.link}
                   >
-                    <FormattedMessage id="Footer.link2" />
+                    <FormattedMessage id="Footer.browseAllLink" />
                   </NamedLink>
                 </li>
                 <li className={css.listItem}>
-                  <NamedLink
-                    name="SearchPage"
-                    to={{
-                      search: '?pub_brand=converse',
-                    }}
-                    className={css.link}
-                  >
-                    <FormattedMessage id="Footer.link3" />
+                <NamedLink name="CMSPage" params={{ pageId: 'contact' }} className={css.link}>
+                    <FormattedMessage id="Footer.toContactPage" />
                   </NamedLink>
                 </li>
-                <li className={css.listItem}>
-                  <NamedLink
-                    name="SearchPage"
-                    to={{
-                      search: '?pub_brand=new_balance',
-                    }}
-                    className={css.link}
-                  >
-                    <FormattedMessage id="Footer.link4" />
-                  </NamedLink>
-                </li>
+                
                 
               </ul>
             </div>
