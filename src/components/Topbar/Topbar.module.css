@@ -31,7 +31,7 @@
 }
 
 .home {
-  display: flex;
+  display: block; /*changed from flex->block*/
   height: var(--topbarHeight);
   /* Calculate vertical padding. Something like: (60px - 25px)/2 */
   padding: calc((var(--topbarHeight) - var(--Topbar_logoHeight)) / 2) 24px;
@@ -39,6 +39,7 @@
 
 .logo {
   object-fit: contain;
+  max-width: 30px; /*added max width constraint*/
 }
 
 .logoutButton {
