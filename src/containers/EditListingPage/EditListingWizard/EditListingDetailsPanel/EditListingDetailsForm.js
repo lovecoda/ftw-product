@@ -104,7 +104,39 @@ const EditListingDetailsFormComponent = props => (
           id: 'EditListingDetailsForm.categoryRequired',
         })
       );
+      
+      const colorConfig = findConfigForSelectFilter('color', filterConfig);
+      const colorSchemaType = colorConfig ? colorConfig.schemaType : null;
+      const colors = colorConfig && colorConfig.options ? colorConfig.options : [];
+      const colorLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.colorLabel',
+      });
+      const colorPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.colorPlaceholder',
+      });
 
+      const colorRequired = required(
+        intl.formatMessage({
+          id: 'EditListingDetailsForm.colorRequired',
+        })
+      );
+
+      const materialConfig = findConfigForSelectFilter('material', filterConfig);
+      const materialSchemaType = materialConfig ? materialConfig.schemaType : null;
+      const materials = materialConfig && materialConfig.options ? materialConfig.options : [];
+      const materialLabel = intl.formatMessage({
+        id: 'EditListingDetailsForm.materialLabel',
+      });
+      const materialPlaceholder = intl.formatMessage({
+        id: 'EditListingDetailsForm.materialPlaceholder',
+      });
+
+      const materialRequired = required(
+        intl.formatMessage({
+          id: 'EditListingDetailsForm.materialRequired',
+        })
+      );
+/*
       const sizeConfig = findConfigForSelectFilter('size', filterConfig);
       const sizeSchemaType = sizeConfig ? sizeConfig.schemaType : null;
       const sizes = sizeConfig && sizeConfig.options ? sizeConfig.options : [];
@@ -136,7 +168,7 @@ const EditListingDetailsFormComponent = props => (
           id: 'EditListingDetailsForm.brandRequired',
         })
       );
-
+*/
       return (
         <Form className={classes} onSubmit={handleSubmit}>
           {errorMessageCreateListingDraft}
@@ -171,25 +203,25 @@ const EditListingDetailsFormComponent = props => (
             validate={categoryRequired}
             schemaType={categorySchemaType}
           />
-
+          
           <CustomFieldEnum
-            id="size"
-            name="size"
-            options={sizes}
-            label={sizeLabel}
-            placeholder={sizePlaceholder}
-            validate={sizeRequired}
-            schemaType={sizeSchemaType}
+            id="color"
+            name="color"
+            options={colors}
+            label={colorLabel}
+            placeholder={colorPlaceholder}
+            validate={colorRequired}
+            schemaType={colorSchemaType}
           />
 
           <CustomFieldEnum
-            id="brand"
-            name="brand"
-            options={brands}
-            label={brandLabel}
-            placeholder={brandPlaceholder}
-            validate={brandRequired}
-            schemaType={brandSchemaType}
+            id="material"
+            name="material"
+            options={materials}
+            label={materialLabel}
+            placeholder={materialPlaceholder}
+            validate={materialRequired}
+            schemaType={materialSchemaType}
           />
 
           <Button

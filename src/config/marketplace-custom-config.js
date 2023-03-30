@@ -49,12 +49,85 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'men', label: 'Men' },
-        { key: 'women', label: 'Women' },
-        { key: 'kids', label: 'Kids' },
+        { key: 'urns', label: 'Urns' },
+        { key: 'jewelry', label: 'Jewelry' },
+        { key: 'art', label: 'Art' },
+        { key: 'services', label: 'Services' },
+        { key: 'memorial_decor', label: 'Memorial Decor' },
+        { key: 'alternatives', label: 'Alternatives' },
+        { key: 'charity', label: 'Charity' },
       ],
     },
   },
+  {
+    id: 'color',
+    label: 'Color',
+    type: 'SelectMultipleFilter',
+    group: 'primary',
+    queryParamNames: ['pub_color'],
+    config: {
+      // Schema type options: 'enum', 'multi-enum'
+      // Both types can work so that user selects multiple values when filtering search results.
+      // With "enum" the functionality will be OR-semantics (Nike OR Adidas OR Salomon)
+      // With "multi-enum" it's possible to use both AND and OR semantics with searchMode config.
+      schemaType: 'enum',
+
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        { key: 'black', label: 'Black' },
+        { key: 'brown', label: 'Brown' },
+        { key: 'white', label: 'White' },
+        { key: 'grey', label: 'Grey' },
+        { key: 'red', label: 'Red' },
+        { key: 'orange', label: 'Orange' },
+        { key: 'yellow', label: 'Yellow' },
+        { key: 'green', label: 'Green' },
+        { key: 'blue', label: 'Blue' },
+        { key: 'purple', label: 'Purple' },
+        { key: 'pink', label: 'Pink' },
+        { key: 'gold', label: 'Gold' },
+        { key: 'silver', label: 'Silver' },
+        { key: 'natural', label: 'Natural' },
+        { key: 'na', label: 'None' },
+      ],
+    },
+  },
+  {
+    id: 'material',
+    label: 'Material',
+    type: 'SelectMultipleFilter',
+    group: 'primary',
+    queryParamNames: ['pub_material'],
+    config: {
+      // Schema type options: 'enum', 'multi-enum'
+      // Both types can work so that user selects multiple values when filtering search results.
+      // With "enum" the functionality will be OR-semantics (Nike OR Adidas OR Salomon)
+      // With "multi-enum" it's possible to use both AND and OR semantics with searchMode config.
+      schemaType: 'enum',
+
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        { key: 'wood', label: 'Wood' },
+        { key: 'metal', label: 'Metal' },
+        { key: 'ceramic', label: 'Ceramic' },
+        { key: 'glass', label: 'Glass' },
+        { key: 'plastic', label: 'Plastic' },
+        { key: 'canvas', label: 'Canvas' },
+        { key: 'biodegradable', label: 'Biodegradable' },
+        { key: 'stone', label: 'Stone' },
+        { key: 'gemstone', label: 'Gemstone' },
+        { key: 'other', label: 'Other' },
+        { key: 'na', label: 'None' },
+      ],
+    },
+  },
+  /*
   {
     id: 'size',
     label: 'Size (US)',
@@ -116,6 +189,7 @@ export const filters = [
       ],
     },
   },
+  */
   {
     id: 'price',
     label: 'Price',
