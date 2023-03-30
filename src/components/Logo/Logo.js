@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import config from '../../config';
-import LogoImageMobile from './coda-logo-mobile.png';
-import LogoImage from './coda-logo.png';
+import LogoImageMobile from './coda-logo-mobile.svg';
+import LogoImage from './coda-logo.svg';
 
 const Logo = props => {
   const { className, format, ...rest } = props;
