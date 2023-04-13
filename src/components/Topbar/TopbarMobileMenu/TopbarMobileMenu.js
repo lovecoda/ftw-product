@@ -117,6 +117,12 @@ const TopbarMobileMenu = props => {
         >
           <FormattedMessage id="TopbarMobileMenu.accountSettingsLink" />
         </NamedLink>
+        <NamedLink
+          className={classNames(css.navigationLink, currentPageClass('NewListingPage'))}
+          name="NewListingPage"
+        >
+          <FormattedMessage id="TopbarMobileMenu.newListing" />
+        </NamedLink>
         <ExternalLink
           className={classNames(css.navigationLink)}
           href="https://lovecoda.medium.com/"

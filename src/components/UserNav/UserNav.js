@@ -35,6 +35,14 @@ const UserNav = props => {
         name: 'ContactDetailsPage',
       },
     },
+    {
+      text: <FormattedMessage id="ManageListingsPage.newListing" />,
+      selected: selectedPageName === 'NewListingPage',
+      disabled: false,
+      linkProps: {
+        name: 'NewListingPage',
+      },
+    },
   ];
 
   return (
